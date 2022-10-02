@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Stopwatch</h1>
+
+      <table class="tbl">
+        <tr>
+          <td>
+            <p>
+              <span id="seconds">00</span> <span>:</span>
+              <span id="tens">00</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button
+              class="btn"
+              id="button-start"
+              style="background-color: #ffb562"
+            >
+              Start
+            </button>
+            <button
+              class="btn"
+              id="button-stop"
+              style="background-color: #f87474"
+            >
+              Stop
+            </button>
+            <button
+              class="btn"
+              id="button-reset"
+              style="background-color: #3ab0ff"
+            >
+              Reset
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

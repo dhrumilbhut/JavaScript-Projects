@@ -1,0 +1,119 @@
+body {
+  background: linear-gradient(to right, #009fff, #ec2f4b);
+  color: #ffffff;
+  font-weight: bolder;
+  font-family: "Boogaloo", cursive;
+}
+
+.player {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-image: url("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  background-position: center;
+  background-size: cover;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+.track-name {
+  font-size: 3rem;
+}
+.track-artist {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.play-pause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.play-pause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1;
+}
+
+.slider-container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek-slider,
+.volume-slider {
+  height: 5px;
+  background: #fa7070;
+  opacity: 0.5;
+}
+
+.seek-slider::-webkit-slider-thumb,
+.volume-slider::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek-slider:hover,
+.volume-slider:hover {
+  opacity: 1;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
+
+.now-playing {
+  font-size: 30px;
+}

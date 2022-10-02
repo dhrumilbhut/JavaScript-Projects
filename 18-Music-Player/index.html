@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="details">
+        <div class="now-playing">Playing X of Y</div>
+        <div class="track-art"></div>
+        <div class="track-name"></div>
+        <div class="track-artist"></div>
+      </div>
+
+      <div class="buttons">
+        <div class="prev-track" onclick="prevTrack()">
+          <i class="fas fa-step-backward fa-2x"></i>
+        </div>
+        <div class="play-pause-track" onclick="playpauseTrack()">
+          <i class="far fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+          <i class="fas fa-step-forward fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <div class="current-time">00:00</div>
+        <input
+          type="range"
+          id=""
+          min="1"
+          max="100"
+          class="seek-slider"
+          value="0"
+          onchange="seekTo()"
+        />
+        <div class="total-duration">00:00</div>
+      </div>
+
+      <div class="slider-container">
+        <i class="fa fa-volume-down"></i>
+        <input
+          type="range"
+          id=""
+          class="volume-slider"
+          min="1"
+          max="100"
+          value="99"
+          onchange="setVolume()"
+        />
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
