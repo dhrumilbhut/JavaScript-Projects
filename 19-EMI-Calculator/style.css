@@ -1,0 +1,40 @@
+body {
+  background-color: #ffecef;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.calculator {
+  background-color: #ffcaca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 100px;
+  border-radius: 100px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 0px;
+  width: 200px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+#btn {
+  padding: 7px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+  font-weight: bolder;
+  font-size: larger;
+}

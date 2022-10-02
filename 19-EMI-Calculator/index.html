@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>EMI Calculator</h1>
+      <p>Amount (₹)*:</p>
+      <input type="number" id="amount" />
+      <p>Interest Rate(%)* :</p>
+      <input type="number" id="rate" />
+      <p>Months to Pay * :</p>
+      <input type="number" id="months" />
+
+      <button id="btn" onclick="calculate()">Calculate EMI</button>
+
+      <h2>EMI (₹) : <span id="total"></span></h2>
+    </div>
+
+    <script src="./scritp.js"></script>
+  </body>
+</html>
